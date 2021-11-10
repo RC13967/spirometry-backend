@@ -4,8 +4,7 @@ app.use(express.json());
 import cors from "cors";
 app.use(cors());
 import fs from "fs";
-const PORT = 4000;
-//  const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 const readFileLines = filename =>
    fs.readFileSync(filename)
    .toString('UTF8')
